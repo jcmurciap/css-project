@@ -19,20 +19,18 @@ body {
     height: 100%;
 }
 
+/*Header*/
 .header {
     margin: 0;
     width: 100%;
     background-color: var(--colorCorpContenido);
-    display: table;
+    display: flex;
     align-items: center;
-    display: 2;
-    color: rgb(114, 205, 241);
+    color: var(--colorCorporativo);
 } 
 
 .header__content {
     justify-content: space-around;
-    display: flex;
-    align-content: center;
 }
 
 .header__title {
@@ -43,7 +41,7 @@ body {
 
 .header__boxAbsolute {
     width: 300px;
-    display: table;
+    /* display: table; */
 }
 
 .header__boxSearch {
@@ -97,3 +95,94 @@ body {
     cursor: pointer;
     color: var(--colorOnClick);
 }
+
+/*Home*/
+
+.home {
+    font-family: var(--FontCorporativo);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.home__section {
+    padding: 10px;
+}
+
+.home__box {
+    width: 100%;
+}
+
+.home__text {
+    font-family: var(--FontLogo);
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+    height: 80%;
+    margin-top: 50px;
+}
+
+
+
+
+
+/*Lessons*/
+.lesson {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+
+.lesson__absolute {
+    font-family: var(--FontCorporativo);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.lesson__figure {
+    background-color: white;
+    margin-left: 85px;
+
+}
+
+.lesson__menu {
+    /* grid-template-rows: repeat(5, 1fr); */
+    height: 100%;
+    display: grid;
+    row-gap: 10px;
+}
+
+.lesson__item {
+    font-family: var(--FontCorporativo);
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 80px; 
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.lesson__item:hover {
+    color: var(--colorOnClick);
+    border-color: var(--colorCorporativo);
+    transition: all .1s ease-in-out;
+    background: var(--colorCorporativo) linear-gradient( white ,var(--colorCorporativo)) repeat-x; 
+    transform: scaleX(1.04);
+}
+
+.lesson__text {
+    font-size: 65px;
+    padding: 30PX;
+    margin: 0;
+    text-align: center;
+}
+
+.lesson__box {
+    margin-top: 35px;
+}
+
+
