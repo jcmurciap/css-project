@@ -17,25 +17,22 @@
 <body>
     <!--Header bar-->
     <header class="header">
-        <section>
-            <h1 class="header header--title">English practice</h1>
-        </section>
-        <div class="header header--box">
-            <input class="header header--box__search" placeholder="What are you looking for?..." />
-        </div>
-        
-        <!--Este div tiene un error-->
-        <div class="header menu-container">
-            <nav class="header menu"> 
-                <button class="header menu--element">News!</button>
-                <button class="header menu--element">Lessons</button>
-                <button class="header menu--element">Our team</button>
-                <button class="header menu--element">Blog</button>
+        <div class=" header header__content">
+            <h1 class="header__title">English practice</h1>
+           
+            <section class="header__boxAbsolute">
+                <input class="header__boxSearch" placeholder="What are you looking for?..."/>
+            </section>
+            
+            <nav class="header__menu"> 
+                <button class="header__menu__elem">News!</button>
+                <button class="header__menu__elem">Lessons</button>
+                <button class="header__menu__elem">Our team</button>
+                <button class="header__menu__elem">Blog</button>
             </nav>
-        </div>
-        <div class="sign-in--table">
-            <nav>
-                <button class="header sign-in">Sign in</button>
+            <nav class="header__menu">
+                <button class="header__menu__elem header__menu__ele--logIn">Log In</button>
+                <button class="header__menu__ele--logIn header__menu__ele--signUp">Sign Up</button>
             </nav>
         </div>
     </header>
