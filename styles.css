@@ -192,11 +192,11 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     text-align: center;
+    align-items: center;
 }
 
 .confidence__boxPhrase {
     padding: 10px;
-    background-color: violet;
 }
 
 .confidence__text {
@@ -204,18 +204,94 @@ body {
     font-family: var(--FontLogo);
     font-size: 70px;
     font-weight: 600;
+    height: 100%;
+    margin-top: 0;
 }
 
 
 .confidence__tips {
-    padding: 10px;
-    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    justify-items: center;
+    grid-row-gap: 5px;
+    margin-top: -100px;
 }
 
 .confidence__tip {
-    padding: 10px;
-    text-align: left;
+    padding: 20px;
+    width: 70%;
+    background-color: var(--colorCorporativo);
+    font-family: var(--FontCorporativo);
+    font-size: 23px;
+    text-align: justify;
+    margin: 0;
 }
 
+
+/*Games*/
+.games {
+    padding: 10px;
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(200, 247, 247); 
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    align-items: center;
+}
+
+.games__list {
+    margin: 5px 5px;
+    border: 2px solid;
+    border-color: black;
+}
+
+.games__items {
+    font-family: var(--FontCorporativo);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 0;
+    margin: 15px 15px;
+    
+}
+
+.games__item {
+    padding: 10px;
+    list-style: none;
+    background-color: var(--colorCorporativo);
+}
+
+.games__item:hover {
+    transform: scaleX(1.05);
+}
+.games__title {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.games__article {
+    font-family: var(--FontCorporativo);
+    font-size: 70px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.games__play {
+    text-align: center;
+}
+
+.games__go {
+    padding: 10px;
+    font-family: var();
+    border-radius: 10px;
+    width: 20vh;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
 
 
