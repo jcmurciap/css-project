@@ -295,3 +295,79 @@ body {
 }
 
 
+.team {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+
+
+.team__member {
+    border: 2px solid;
+    border-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+
+}
+
+.team__album {
+    margin-top: 10px;
+}
+
+.team__image {
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team__dates {
+    font-family: var(--FontCorporativo);
+    margin-bottom: 15px;
+}
+
+.team__name {
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin: 0;
+    padding: 5px;
+}
+
+.team__position {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.team__brief {
+    margin: 0;
+    margin-left: 5px;
+}
+
+/*footer*/
+.footer-container {
+    display: flex;
+    align-content: center;
+    background-color: var(--colorCorporativo);
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+.footer__text {
+    margin: 0;
+    color: white;
+    font-family: var(--FontCorporativo);
+    margin: 15px 15px;
+}
+
+
+
+
